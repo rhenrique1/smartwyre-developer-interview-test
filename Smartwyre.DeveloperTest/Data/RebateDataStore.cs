@@ -2,7 +2,10 @@
 
 namespace Smartwyre.DeveloperTest.Data;
 
-public class RebateDataStore
+/// <summary>
+/// Implements IRebateDataStore to handle persistence for Rebates.
+/// </summary>
+public class RebateDataStore : IRebateDataStore
 {
     public Rebate GetRebate(string rebateIdentifier)
     {

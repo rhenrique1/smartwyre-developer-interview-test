@@ -2,7 +2,10 @@
 
 namespace Smartwyre.DeveloperTest.Data;
 
-public class ProductDataStore
+/// <summary>
+/// Implements IProductDataStore to handle retrieval for Products.
+/// </summary>
+public class ProductDataStore : IProductDataStore
 {
     public Product GetProduct(string productIdentifier)
     {
